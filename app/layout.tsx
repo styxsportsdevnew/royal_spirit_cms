@@ -1,7 +1,7 @@
 "use client";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Provider } from "react-redux";
+import { Provider, useSelector } from "react-redux";
 import store from "../redux/store";
 import "./globals.css";
 import LayoutWrapper from "@/components/LayoutWrapper";
@@ -26,6 +26,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body
