@@ -16,7 +16,7 @@ const CollapsibleSidebar: React.FC = () => {
   if (isAuthPage || user != "admin") {
     window.location.href = "/login";
     return null;
-    }
+  }
 
   return (
     <div style={{ display: "flex", height: "100vh" }}>
@@ -26,6 +26,6 @@ const CollapsibleSidebar: React.FC = () => {
       </div>
     </div>
   );
-}
+};
 
 export default CollapsibleSidebar;
